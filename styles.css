@@ -157,7 +157,16 @@ footer {
   padding-top: 20px;
 }
 
-/* Springfielf sivu */
+/* Springfield sivu */
+
+.random-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #E44423;
+  font-family: 'Rock Salt';
+  margin-bottom: 20px;
+  text-align: left;
+}
 
 .springfield-banner img {
   width: 100%;
@@ -168,13 +177,6 @@ footer {
   margin-bottom: 15px;
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 30px auto;
-  max-width: 1000px;
-}
 
 .image-button {
   position: relative;
@@ -207,4 +209,35 @@ footer {
   font-family: 'Comic Neue', sans-serif;
   text-shadow: 2px 2px 5px #000000;
   pointer-events: none;
+}
+
+.fullscreen-img {
+  display: block;
+  width: 800px;     
+  height: 500px;      
+  max-width: 90vw;    
+  max-height: 80vh;    
+  object-fit: cover;   
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  margin: 10px 0 0 0;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 10px;
+  background: #5B6ED9;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Comic Neue';
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #E44423;
+  color: #fff;
 }
