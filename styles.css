@@ -241,3 +241,153 @@ footer {
   background: #E44423;
   color: #fff;
 }
+
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 40px auto;
+  max-width: 1100px;
+  align-items: stretch; /* Add this line */
+}
+
+.character-card {
+  display: flex;
+  align-items: center;
+  background: #F4F4F4;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 18px 20px;
+  min-height: 120px;
+  min-width: 0;
+  width: 100%;           /* Add this line */
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+.character-card:hover,
+.character-card:focus {
+  box-shadow: 0 4px 16px rgba(91,110,217,0.18);
+  background: #e6eaff;
+  outline: none;
+}
+
+.character-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 18px;
+  background: #fff;
+}
+
+.character-card span {
+  font-size: 1.2rem;
+  font-family: 'Comic Neue', sans-serif;
+  color: #222;
+  font-weight: bold;
+}
+
+
+
+
+.sound-clips {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px; 
+  margin: 20px 0;
+}
+
+.sound-clips audio {
+  width: 180px;     
+  height: 28px;     
+  border-radius: 8px;
+  background: #f4f4f4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  outline: none;
+}
+
+.voice-actor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.voice-actor img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+ .character-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.character-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-box {
+  width: 300px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.info-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.info-button {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 8px 8px 0 0;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+
+.info-button:hover {
+  background-color: #f5b700;
+}
+
+.button-row .info-button:first-child {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff
+}
+
+.info-box {
+  margin-top: 0;
+  width: 100%;       
+  min-width: 600px;   
+  flex: 1;            
+}
+
